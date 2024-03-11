@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard sidebar menu | Dark-light Mode</title>
+    <!-------#######  CSS ####### -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-------####### BOXICONS CSS ####### -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                    <div class="text-header-text">
+                        <span class="name">AIBOT</span>
+                        <SPAN class="profession">WEB DEVELOPER</SPAN>
+                    </div>
+                </span> 
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <a href="#">
+                        <i class='bx bx-search icon' ></i>
+                       <input type="text" placeholder="search...">
+                    </a>
+                </li>
+                <ul class="menu-bar">
+                    <li class="menu">
+                        <a href="#">
+                            <i  class='bx bx-home-alt icon'></i>
+                           <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="#">
+                            <i  class='bx bx-coffee icon'></i>
+                           <span class="text nav-text">Feedback</span>
+                        </a>
+                    </li> <li class=" ">
+                        <a href="#">
+                            <i  class='bx bx-save icon'></i>
+                           <span class="text nav-text">My saves</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="#">
+                            <i  class='bx bx-history icon'></i>
+                           <span class="text nav-text">Histroy</span>
+                        </a>
+                    </li>
+                    <li class=" "> 
+                        <a href="#">
+                            <i class='bx bxs-objects-vertical-bottom icon'></i>
+                           <span class="text nav-text">Satistics</span>
+                        </a>
+                    </li>
+                </ul>
+            </div><br><br><br><br>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                       <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                   <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                   </div>
+                   <span class="mode-text text">Dark Mode</span>
+
+                   <div class="toggle-switch">
+                    <span class="switch"></span>
+                   </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text">Dashboard</div>
+    </section>
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>
