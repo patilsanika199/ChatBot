@@ -64,7 +64,7 @@ body.dark{
     font-weight: 500;
     color: var(--sidebar-color);
     transition: var(--tran-03)
-    white-space:nowrap;
+    white-space : nowrap;
     opacity: 1;
 }
 
@@ -281,8 +281,17 @@ body.dark .switch::before{
     left:250px;
     height: 100vh;
     width: calc(100% - 25px);
-    background:var(--body-color);
+    background-color:#343541;
     transition: var(--tran-05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 100vh;
+    color:white;
+    width: 100%;
+
 }
 
 .home.text{
@@ -290,9 +299,64 @@ body.dark .switch::before{
     font-weight: 500;
     color: var(--text-color);
     padding: 8px 40px;
+
 }
 
 .sidebar.close ~ .home{
     left: 88px;
     width: calc(100% - 88px);
+}
+
+h1{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 200px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    color: rgb(255,255,255,0.5);
+    font-size: 11px;
+    padding: 10px;
+}
+
+input{
+    border: none;
+    color: rgb(255,255,255,0.5);
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.05) 0 54px 55px;
+    rgba(0,0,0,0.05) 0 -12px 30px;
+    rgba(0,0,0,0.05) 0 4px 6px;
+    rgba(0,0,0,0.05) 0 12px 3px;
+    rgba(0,0,0,0.09) 0 -3px 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input-container{
+    width: 100%;
+    position: relative;
+    max-width: 650px;
+}
+
+.id{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    color: #18191A;
+    font-size: larger;
+    cursor: pointer;
 }
