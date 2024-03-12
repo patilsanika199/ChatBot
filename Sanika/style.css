@@ -38,7 +38,12 @@ body.dark{
     --toggle-color:#F6F5FF;
     --text-color:#CCC;
 }
-
+.name{
+    color: var(--text-color);
+}
+.profession{
+    color: var(--text-color);
+}
  /* ********* sidebar ********/
 .sidebar{
     position: fixed;
@@ -165,7 +170,7 @@ body.dark .sidebar header .toggle{
 }
 
 .search-box input{
-    height: 100%;
+    height: 50%;
     width: 100%;
     outline: none;
     border: none;
