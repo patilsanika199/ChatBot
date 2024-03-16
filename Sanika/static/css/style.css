@@ -1,8 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap')
 
 *{
         font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -27,6 +28,8 @@
 body{   
     height: 100vh;
     background: var(--body-color);
+    
+    
 
 }
 
@@ -55,6 +58,10 @@ body.dark{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
+    flex-direction:column;
+    display: flex;
+
+    
 }
 
 .sidebar.close{
@@ -295,7 +302,7 @@ body.dark .switch::before{
     justify-content: space-between;
     height: 100vh;
     color:white;
-    width: 100%;
+    width: 75%;
 
 }
 
@@ -357,7 +364,7 @@ input:focus{
     max-width: 650px;
 }
 
-.id{
+.submit{
     position: absolute;
     right: 0;
     bottom: 15px;
