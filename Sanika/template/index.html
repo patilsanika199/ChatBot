@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard sidebar menu | Dark-light Mode</title>
     <!-------#######  CSS ####### -->
-    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/style.css">
 
     <!-------####### BOXICONS CSS ####### -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav class="sidebar close">
+
+    <nav class="sidebar">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="logo.png" alt="logo">
+                    <img src="static/logo.png" alt="logo">
                     <div class="text-header-text">
                         <span class="name">AIBOT</span>
                         <SPAN class="profession">WEB DEVELOPER</SPAN>
@@ -60,7 +66,7 @@
                     </li>
                     
                 </ul>
-            </div><br><br><br><br>
+            </div><br><br><br><br><br><br><br>
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
@@ -89,15 +95,15 @@
         <div class="text"></div>
         <DIV class="bottom-section">
             <div class="input-container">
-            <input/>
-                <div class="id">➤</div>
+            <input class= "py-4 rounded-md"placeholder="Send a Meassage" type="text" name="text" id=""/>
+                <div class="submit">➤</div>
             </div>
         </DIV>
         <p class="info">Our goal is to make AI Systems more natural safe to interact with.
             Your feedback help us to improve.
         </p>
     </section>
-    <script src="script.js">
+    <script src="static/js/script.js">
 
 
     </script>
