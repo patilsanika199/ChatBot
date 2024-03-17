@@ -11,6 +11,95 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        input{
+            color: black;
+        }
+        body {
+            overflow: hidden;
+        }
+        .home .submit{
+            right: 10px;
+        }
+        .home .info{
+            padding-bottom: 100px;
+        }
+        .home1{
+            display: none;
+            
+        }
+
+        .home1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .home1 .box1{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 14px;
+            height:40px;
+            padding-left: 0px;
+            padding-right: 150px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+           
+        }
+        .home1  img{
+            width: 40px;
+            border-radius: 35px;
+            padding:0;
+        
+        }
+        
+        .home1 .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px;
+            height:40px;
+            padding-left: 250px;
+            padding-right: 50px;
+            padding-top: 40px;
+            flex-wrap: nowrap;
+            background-color: gray;
+            padding-bottom: 40px;
+            
+        }
+
+        .home1 .box2 .flex{
+            margin-top: 0.75rem;
+        }
+     
+        .home1 .bottom-section{
+             padding-top:400px;
+             padding-left: 200px;
+        }
+
+        .home1 .input-container .submit{
+            padding-left: 10px;
+            position: absolute;
+            right: 20px;
+            font-size: larger;
+            cursor: pointer;
+            bottom: 15px;
+        }
+        body.dark .home1{
+             color: var(--text-color);
+        }
+        .home1 .info{
+            padding-left: 600px;
+            color: black;
+            padding-top: 25px;
+            font-size: 10px;
+        }
+        body.dark .home1 .info{
+            color: var(--text-color);
+        }
+    
+    </style>
 
     <!-------####### BOXICONS CSS ####### -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -80,7 +169,7 @@
                         <i class="bx bx-moon icon moon"></i>
                         <i class="bx bx-sun icon sun"></i>
                    </div>
-                   <span class="mode-text text">Dark Mode</span>
+                   <span class="mode-text text">Dark Mode   </span>
 
                    <div class="toggle-switch">
                     <span class="switch"></span>
@@ -89,23 +178,80 @@
             </div>
         </div>
     </nav>
-
-    <section class="home">
+    <div class="home">
         <h1> ChatBot </h1>
         <div class="text"></div>
         <DIV class="bottom-section">
             <div class="input-container">
-            <input class= "py-4 rounded-md"placeholder="Send a Meassage" type="text" name="text" id=""/>
+            <input class= "py-4 rounded-md"placeholder="Send a Meassage" type="text" name="text" id="questionInput"/>
                 <div class="submit">➤</div>
             </div>
         </DIV>
         <p class="info">Our goal is to make AI Systems more natural safe to interact with.
             Your feedback help us to improve.
         </p>
-    </section>
+    
+    </div>
+    <div class="home1">
+        <div class="box1">
+            <img src="static/logo1.jpg">
+            <div id="question2">What is 4,54,324 + 6,34,343</div>
+        </div>
+        <div class="box2">
+            <img src="static/logo1.jpg">
+            <div class="flex">
+            <div id="question1">What is 4,54,324 + 6,34,343</div>
+            <div id="solution">Therefore, the sum of 4,54,324 and 6,34,343 is 10,88,667.</div>
+        </div>
+        </div>
+        <div class="text"></div>
+        <DIV class="bottom-section">
+            <div class="input-container">
+            <input class= "py-4 rounded-md"placeholder="Send a Meassage" type="text" name="text" id=" "/>
+                <div class="submit">➤</div>
+            </div>
+        </DIV>
+        <p class="info">Our goal is to make AI Systems more natural safe to interact with.
+            Your feedback help us to improve.
+        </p>
+        </div>
+    </div>
     <script src="static/js/script.js">
+    </script>
+    <script>
+        async function postData(url = "", data = {}) {
+            const response = await fetch(url, {
+              method: "POST", headers: {
+                "Content-Type": "application/json",
+              },body: JSON.stringify(data),
+            });
+            return response.json(); 
+          }
+          
+
+            home =body.querySelector(".home"),
+            home1 =body.querySelector(".home1")
+            submit=body.querySelector(".submit");
+            questionInput=body.querySelector(".questionInput")
 
 
+                submit.addEventListener("click", () =>{
+                 
+                questionInput = document.getElementById("questionInput").value;
+                document.getElementById("questionInput").value = " ";
+                document.querySelector(".home1").style.display = "block"
+                document.querySelector(".home").style.display = "none"
+
+                question1.innerHTML = questionInput;
+                question2.innerHTML =questionInput;
+
+                  //get the answer and populate!
+                postData("/api",{"question":"questionInput"})
+
+          })
+    
+         
+          
     </script>
 </body>
 </html>

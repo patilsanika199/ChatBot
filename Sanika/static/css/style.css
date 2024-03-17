@@ -2,7 +2,7 @@
 
 *{
         font-family: "Poppins", sans-serif;
-        font-weight: 400;
+        font-weight: 300;
         font-style: normal;
         margin: 0;
         padding: 0;
@@ -302,7 +302,7 @@ body.dark .switch::before{
     justify-content: space-between;
     height: 100vh;
     color:white;
-    width: 75%;
+    width:84%;
 
 }
 
@@ -364,9 +364,9 @@ input:focus{
     max-width: 650px;
 }
 
-.submit{
+.home .submit{
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: 15px;
     color: #18191A;
     font-size: larger;
