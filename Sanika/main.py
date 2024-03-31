@@ -9,10 +9,11 @@ def home():
 @app.route("/api", methods=["GET","POST"])
 def qa():
         if request.method == "POST":
-                print( request.json)
-                data = {"result":"hey i am sanika "}
+                print(request.json)
+                question = request.json.get("question")
+                data = {"result":f"Answer of {question}" } 
                 return jsonify(data)
-        data = {"result":""}
+        data = {"result":"Hey i am sanika "}
         return jsonify(data)        
        
     
