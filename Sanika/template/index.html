@@ -33,6 +33,7 @@
             display: none;
             
         }
+        
 
         .home1{
             display: flex;
@@ -47,7 +48,7 @@
             padding: 14px;
             height:40px;
             padding-left: 90px;
-            padding-right: 150px;
+            padding-right: 162px;
             padding-bottom: 50px;
             padding-top: 50px;
             margin: auto;
@@ -66,13 +67,14 @@
             align-items: center;
             padding: 14px;
             height:40px;
-            padding-left: 0px;
+            padding-left: 50px;
             padding-right: 50px;
             padding-top: 40px;
             flex-wrap: nowrap;
             background-color: gray;
             padding-bottom: 40px;
             margin: auto;
+        
             
         }
 
@@ -101,6 +103,7 @@
             color: black;
             padding-top: 25px;
             font-size: 11px;
+            margin: auto;
         }
         body.dark .home1 .info{
             color: var(--text-color);
@@ -239,13 +242,13 @@
             home =body.querySelector(".home"),
             home1 =body.querySelector(".home1")
             submit=body.querySelector(".submit");
-           
-
+        
 
                 submit.addEventListener("click", async () =>{
                  
                 questionInput = document.getElementById("questionInput").value;
                 document.getElementById("questionInput").value = " ";
+    
                 document.querySelector(".home1").style.display = "block"
                 document.querySelector(".home").style.display = "none"
 
@@ -258,6 +261,10 @@
                 solution.innerHTML = result.result
 
           })
+
+          
+
+        
     
          
           
