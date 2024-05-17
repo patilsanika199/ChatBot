@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "664207e57f2a9e975d39b280"
+  },
+  "question": "hey",
+  "answer": "I am chatbot"
+},
+{
+  "_id": {
+    "$oid": "66421b4f9ebfe439c6617826"
+  },
+  "question": " hey",
+  "answer": "Answer from openai for  hey"
+},
+{
+  "_id": {
+    "$oid": "664387cc24d980bebb69faa0"
+  },
+  "question": "Which faulty is for ML",
+  "answer": "Prof SAB"
+},
+{
+  "_id": {
+    "$oid": "6644935def80cf585127d397"
+  },
+  "question": "A6eDEAt",
+  "answer": "Answer from openai for A6eDEAt"
+},
+{
+  "_id": {
+    "$oid": "6644a84eaf7ed8f0297ab577"
+  },
+  "question": "Which faculty is for DB?",
+  "answer": "Prof.PDP"
+},
+{
+  "_id": {
+    "$oid": "6644a8dbaf7ed8f0297ab579"
+  },
+  "question": "Which faculty is for CP?",
+  "answer": "Prof.NAM"
+},
+{
+  "_id": {
+    "$oid": "6644a921af7ed8f0297ab57a"
+  },
+  "question": "Which faculty is for CD?",
+  "answer": "Prof VSP"
+},
+{
+  "_id": {
+    "$oid": "6644a956af7ed8f0297ab57b"
+  },
+  "question": "which faculty is for IOT? ",
+  "answer": "Prof.PDP"
+},
+{
+  "_id": {
+    "$oid": "6644a9b3af7ed8f0297ab57c"
+  },
+  "question": "TY 5th sem subjects",
+  "answer": "1.IoT=Internet of Things\n2.ML=Machine Learning\n3.CD=Compiler Designing\n4.CN=Computer Network\n5.CB=Consumer Behaviour"
+},
+{
+  "_id": {
+    "$oid": "6644aa6faf7ed8f0297ab57d"
+  },
+  "question": "Which faculty is for CB?",
+  "answer": "Prof.RAP"
+}]

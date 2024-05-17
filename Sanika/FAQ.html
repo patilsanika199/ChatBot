@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Chatbot FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url("/back.jpg");
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding-left: 20px;
+            border-left: 2px solid #007bff;
+            color: #666;
+        }
+
+        .answer p:first-child {
+            margin-top: 0;
+        }
+
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer.active {
+            display: block;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Chatbot FAQ</h1>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What programs does the college offer?</div>
+            <div class="answer">
+                <p>The college offers a variety of programs including Computer Science, Electrical Engineering, and Business Administration.</p>
+                <p>For a complete list of programs, please visit our website.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I apply for admission?</div>
+            <div class="answer">
+                <p>To apply for admission, please fill out the online application form available on our website.</p>
+                <p>Make sure to submit all required documents and pay the application fee.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Can I schedule a campus tour?</div>
+            <div class="answer">
+                <p>Yes, you can schedule a campus tour by contacting our admissions office.</p>
+                <p>We offer tours on weekdays and select weekends.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What scholarships are available?</div>
+            <div class="answer">
+                <p>We offer a variety of scholarships based on academic merit, financial need, and other criteria.</p>
+                <p>For more information on scholarships and eligibility requirements, please visit our website.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I contact the admissions office?</div>
+            <div class="answer">
+                <p>You can contact the admissions office by phone at (555) 123-4567 or by email at admissions@example.com.</p>
+                <p>Our office hours are Monday through Friday, 9:00 AM to 5:00 PM.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Can I transfer credits from another college?</div>
+            <div class="answer">
+                <p>Yes, you may be able to transfer credits from another college.</p>
+                <p>Transfer credit policies vary, so please contact the registrar's office for more information.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Is housing available for students?</div>
+            <div class="answer">
+                <p>Yes, on-campus housing is available for students.</p>
+                <p>We offer a variety of housing options including dormitories and apartment-style residences.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What resources are available for students?</div>
+            <div class="answer">
+                <p>We offer a range of resources and support services for students including academic advising, tutoring, and career counseling.</p>
+                <p>Our library provides access to a vast collection of books, journals, and online resources.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I get involved in extracurricular activities?</div>
+            <div class="answer">
+                <p>We have a variety of clubs, organizations, and student groups that you can join based on your interests.</p>
+                <p>Check out our student activities office for more information on clubs and events.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(question) {
+            question.nextElementSibling.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
