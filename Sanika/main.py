@@ -28,6 +28,7 @@ def home():
     print(myChats)
     return render_template("index.html", myChats=myChats)
 
+
 def get_answer(question):
     query_vector = vectorizer.transform([question])
     similarities = cosine_similarity(query_vector, tfidf_matrix).flatten()
@@ -36,6 +37,8 @@ def get_answer(question):
         return chats.iloc[best_match_idx]['answer']
     else:
         return None
+    
+
 
 @app.route("/api", methods=["GET", "POST"])
 def qa():
